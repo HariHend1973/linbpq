@@ -19,7 +19,7 @@ define Package/linbpq
   SECTION:=net
   CATEGORY:=mypackages
   DEPENDS:= +libconfig +libpthread +libstdcpp +libminiupnpc +libpcap +libcap-bin +zlib
-  TITLE:=Hamradio APRS iGate / Digipeater
+  TITLE:=Hamradio packet radio
   URL:=https://www.kutukupret.com
   MAINTAINER:=hari
 endef
@@ -27,20 +27,6 @@ endef
 define Package/linbpq/description
   linbpq is a packet radio software for amateur.
 endef
-
-#TARGET_CFLAGS+=$(CFLAGS) -fcommon -fhonour-copts
-
-#CONFIGURE_ARGS += \
-#	--with-embedded \
-#	--with-pthread
-
-#CONFIGURE_VARS += \
-#	#TARGET_CFLAGS+= -fcommon
-#	TARGET_CFLAGS:=$(TARGET_CFLAGS) -fcommon
-
-#define Build/linbpq/Configure
-#	$(call Build/Configure/Default)
-#endef
 
 define Build/Compile
 	$(call Build/Compile/Default,LD=$(TARGET_CC))
