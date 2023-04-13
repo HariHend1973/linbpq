@@ -25,10 +25,7 @@ define Package/linbpq
 endef
 
 define Package/linbpq/description
-  linbpq is an APRS iGate that has minimal system requirements. It can handle
-  an arbitrary number of radio modems, optionally relay APRS packets from radio
-  to the APRS-IS network, optionally digipeat AX25 with or without NEWn-N
-  rules, optionally relay APRS packets from APRS-IS to radio (TX-iGate)
+  linbpq is a packet radio software for amateur.
 endef
 
 #TARGET_CFLAGS+=$(CFLAGS) -fcommon -fhonour-copts
